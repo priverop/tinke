@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DIG.cs" />
+    <Compile Include="DTX.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="ALAR.cs" />
   </ItemGroup>
