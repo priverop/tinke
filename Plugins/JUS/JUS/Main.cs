@@ -43,6 +43,8 @@ namespace JUS
 
             if (ext == "DSIG")
               return Format.FullImage;
+            else if (ext == "DSTX")
+                return Format.FullImage;
             else if (ext == "ALAR")
                 return Format.Pack;
             else if (ext == "DSCP")
@@ -80,6 +82,12 @@ namespace JUS
             if (file.name.EndsWith(".dig", StringComparison.CurrentCulture))
             {
               new DIG(pluginHost, file.path, file. id);
+              return new Ekona.Images.ImageControl(pluginHost, false);
+            }
+
+            if (file.name.EndsWith(".dtx", StringComparison.CurrentCulture))
+            {
+              new DTX(pluginHost, file.path, file. id);
               return new Ekona.Images.ImageControl(pluginHost, false);
             }
 
