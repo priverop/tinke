@@ -44,7 +44,7 @@ namespace JUS
             if (ext == "DSIG")
               return Format.FullImage;
             else if (ext == "DSTX")
-                return Format.Pack;
+                return Format.FullImage;
             else if (ext == "ALAR")
                 return Format.Pack;
             else if (ext == "DSCP")
